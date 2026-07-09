@@ -16,8 +16,8 @@ export default function MyApp () {
           <Navbar/>
             <main className="app-content">
           <Routes>
-              <Route path = "/" element = {<Dashboard Name = "Kaloyan"/>}/>
-              <Route path = "/dashboard" element = {<Dashboard Name = "Kaloyan"/>}/>
+              <Route path = "/" element = {<Dashboard Name = "J"/>}/>
+              <Route path = "/dashboard" element = {<Dashboard Name = "J"/>}/>
               <Route path = "/accounts" element = {<Accounts/>}/>
               <Route path = "/transactions" element = {<Transactions/>}/>
               <Route path = "/investments" element = {<Investments/>}/>
