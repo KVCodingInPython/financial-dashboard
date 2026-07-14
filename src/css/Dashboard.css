@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .accounts-content {
+        display: block;
+        padding: 0.75rem;
+    }
+}

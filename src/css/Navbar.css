@@ -1,0 +1,88 @@
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: block;
+}
+
+.nav-link.active {
+    background-color: blue;
+    color: white;
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 'dashboard accounts'
+                             'transactions investments'
+                             'budget reports'
+                             'settings profile';
+        gap: 0.5rem;
+        padding: 0.75rem;
+    }
+
+    .dashboard  {
+    grid-area: dashboard;
+    }
+
+    .accounts  {
+        grid-area: accounts;
+    }
+
+    .transactions  {
+        grid-area: transactions;
+    }
+
+    .investments  {
+        grid-area: investments;
+    }
+
+    .budget {
+        grid-area: budget;
+    }
+
+    .reports  {
+        grid-area: reports;
+    }
+
+    .settings {
+        grid-area: settings;
+    }
+
+    .profile {
+        grid-area: profile;
+    }
+
+    
+}
+

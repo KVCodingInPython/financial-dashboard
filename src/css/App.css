@@ -1,3 +1,4 @@
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -248,6 +249,7 @@
   background: rgba(255, 255, 255, 0.78);
 }
 
+
 .navbar .accounts a:hover,
 .navbar .transactions a:hover,
 .navbar .investments a:hover,
@@ -265,6 +267,7 @@
   background: rgba(37, 99, 235, 0.1);
   color: var(--accent-hover);
 }
+
 
 
 .app-content {

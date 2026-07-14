@@ -1,4 +1,5 @@
-import "./App.css"
+import "./css/App.css"
+
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard.jsx";
 import Accounts from "./pages/Accounts.jsx";
@@ -9,6 +10,8 @@ import Reports from "./pages/Reports.jsx";
 import Settings from "./pages/Settings.jsx";
 import Profile from "./pages/Profile.jsx";
 import Navbar from "./Components/Navbar.jsx";
+import Footer from "./Components/Footer.jsx";
+
 
 export default function MyApp () {
     return (
@@ -27,7 +30,7 @@ export default function MyApp () {
               <Route path = "/profile" element = {<Profile/>}/>
             </Routes>
             </main>
-          
+            <Footer/>
       </>
     );
 }
