@@ -1,0 +1,26 @@
+/* Responsive Layout for Transactions Page - Mobile + Tablet (768px), Laptop and PC (900px and above) */
+
+
+.transactions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 2fr));
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .transactions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .transactions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+
+
