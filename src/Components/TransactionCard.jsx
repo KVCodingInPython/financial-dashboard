@@ -1,3 +1,5 @@
+import {Stack, Divider, Typography} from '@mui/material';
+
 export default function TransactionCard({ transaction }) {
     if (!transaction) return null;
     
@@ -12,10 +14,37 @@ export default function TransactionCard({ transaction }) {
 
     return (
         <div style={cardStyle}>
-            <h3>{transaction.description}</h3>
-            <p>Amount: ${transaction.amount}</p>
-            <p>Date: {transaction.date}</p>
-            <p>Category: {transaction.category}</p>
+                 <Stack
+            spacing={1}
+            sx={{
+                p: 2,
+                border: "1px solid #ccc",
+                borderRadius: 2,
+                width: 300
+            }}
+        >
+            <Typography variant="h6" fontWeight="bold">
+                {transaction.description}
+            </Typography>
+
+            <Divider />
+
+            <Stack direction="row" justifyContent="space-between">
+                <Typography fontWeight="bold">Amount: </Typography>
+                <Typography> £{transaction.amount}</Typography>
+            </Stack>
+
+            <Stack direction="row" justifyContent="space-between">
+                <Typography fontWeight="bold">Date: </Typography>
+                <Typography>{transaction.date}</Typography>
+            </Stack>
+
+            <Stack direction="row" justifyContent="space-between">
+                <Typography fontWeight="bold">Category: </Typography>
+                <Typography>{transaction.category}</Typography>
+            </Stack>
+        </Stack>
+  
         </div>
     );
 }
