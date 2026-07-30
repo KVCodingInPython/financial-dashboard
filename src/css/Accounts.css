@@ -1,39 +1,18 @@
-
-.accounts-content {
-    padding: 1rem;
-    margin: 0rem;
-    border-bottom: 2px solid black;
-
+.accounts-table-card {
+  width: 100%;
+  min-width: 0;
+  text-align: left;
 }
 
-
-.accounts-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
+.accounts-table-card h2 {
+  margin: 0;
 }
 
-.accounts-content h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    word-wrap: break-word;
-    overflow: hidden;
+.accounts-table-card p {
+  margin: 0 0 1rem;
 }
 
-.account-label {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
-
+.accounts-table-scroll {
+  width: 100%;
+  overflow-x: auto;
 }
-
-.accounts-content p {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-
-
-
-
-
-
-

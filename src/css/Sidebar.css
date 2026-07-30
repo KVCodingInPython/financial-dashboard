@@ -30,6 +30,25 @@ li {
     box-shadow: var(--shadow);
 }
 
+.sidebar-table-card {
+    min-width: 0;
+}
+
+.sidebar-table-heading h2 {
+    margin: 0;
+}
+
+.sidebar-table-heading p {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.sidebar-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .chart-shell {
     width: 100%;
     overflow: hidden;

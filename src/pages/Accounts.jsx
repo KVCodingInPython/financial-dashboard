@@ -1,9 +1,6 @@
-import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
-import AccountCard from '../Components/AccountCard.jsx';
-
-import "../css/reset.css"
-import "../css/Accounts.css"
+import Card from '../Components/Card.jsx';
+import Table from '../Components/Table.jsx';
+import "../css/Accounts.css";
 
 const accounts = [
     {
@@ -36,25 +33,34 @@ export default function Accounts() {
     return (
         <>
             <h1>Accounts</h1>
-
-            <br/>
-
-            <div className = "accounts-content">
-                <Stack
-                direction={{xs: "column", sm: "row"}}
-                divider={<Divider orientation="vertical" flexItem sx={{ borderColor: 'black', borderBottomWidth: 2 }}/>}
-                spacing={{sm: 10, xs: 6}}>
-                        {accounts.map((account) => (
-                            <AccountCard
-                                key = {account.accountId}
-                                account = {account}
-                            />
-                        ))}
-                </Stack>
-            </div>
+            <Card>
+                <div className="accounts-table-card">
+                    <h2>Accounts List</h2>
+                    <p>Cloud accounts currently connected to your workspace.</p>
+                    <div className="accounts-table-scroll">
+                        <Table
+                            headers={[
+                                "Account",
+                                "Account ID",
+                                "Region",
+                                "Current Spend",
+                                "Resources",
+                                "Status",
+                            ]}
+                            data={accounts.map((account) => [
+                                account.name,
+                                account.accountId,
+                                account.region,
+                                account.currentSpend,
+                                account.resources,
+                                account.status,
+                            ])}
+                        />
+                    </div>
+                </div>
+            </Card>
         </>
     );
 }
-
 
 

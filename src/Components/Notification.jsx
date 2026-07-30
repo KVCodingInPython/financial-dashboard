@@ -3,10 +3,12 @@ import React from 'react';
 export default function Notification({ title, message, type ='info', onClose  }) {
     const styles = {
         container: {
-            padding: '2rem',
+            padding: '1.2rem',
             borderRadius: '2rem', 
             border: '1px solid',
             marginBottom: '1.5rem',
+            width: '100%',
+            boxSizing: 'border-box',
             backgroundColor:
                 type === 'success' ? '#e8f5e9' :
                 type === 'error' ? '#ffebee' :
@@ -46,7 +48,6 @@ export default function Notification({ title, message, type ='info', onClose  })
     );
 
 };
-
 
 
 

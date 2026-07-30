@@ -241,6 +241,7 @@
 
 .navbar .accounts a,
 .navbar .transactions a,
+.navbar .optimisation a,
 .navbar .investments a,
 .navbar .budget a,
 .navbar .reports a,
@@ -252,6 +253,7 @@
 
 .navbar .accounts a:hover,
 .navbar .transactions a:hover,
+.navbar .optimisation a:hover,
 .navbar .investments a:hover,
 .navbar .budget a:hover,
 .navbar .reports a:hover,
@@ -259,6 +261,7 @@
 .navbar .profile a:hover,
 .navbar .accounts a:focus-visible,
 .navbar .transactions a:focus-visible,
+.navbar .optimisation a:focus-visible,
 .navbar .investments a:focus-visible,
 .navbar .budget a:focus-visible,
 .navbar .reports a:focus-visible,
