@@ -16,8 +16,8 @@ const Navbar = () => {
             <div className="transactions">
                 <Link to="/transactions" className={linkClass}>Transactions</Link>
             </div>
-            <div className="investments">
-                <Link to="/investments" className={linkClass}>Investments</Link>
+            <div className="optimisation">
+                <Link to="/optimisation" className={linkClass}>Cost Optimisation</Link>
             </div>
             <div className="budget">
                 <Link to="/budget" className={linkClass}>Budget</Link>

@@ -23,7 +23,7 @@ export default function MyApp () {
               <Route path = "/dashboard" element = {<Dashboard Name = "J"/>}/>
               <Route path = "/accounts" element = {<Accounts/>}/>
               <Route path = "/transactions" element = {<Transactions/>}/>
-              <Route path = "/investments" element = {<Investments/>}/>
+              <Route path = "/optimisation" element = {<Investments/>}/>
               <Route path = "/budget" element = {<Budget/>}/>
               <Route path = "/reports" element = {<Reports/>}/>
               <Route path = "/settings" element = {<Settings/>}/>

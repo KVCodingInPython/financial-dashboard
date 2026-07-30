@@ -1,0 +1,52 @@
+.optimisation-metrics {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  text-align: left;
+}
+
+.optimisation-metrics h2 {
+  margin: 0;
+}
+
+.section-divider {
+  width: 100%;
+  height: 2px;
+  border: 0;
+  background-color: var(--accent-horizontal-rule);
+  margin: 2rem 0;
+}
+
+
+.chart-shell {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.optimisation-chart {
+  width: 100%;
+  min-width: 0;
+}
+
+.resource-utilisation {
+  width: 100%;
+  min-width: 0;
+  text-align: left;
+}
+
+.resource-utilisation-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chart-fallback {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--text-h);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
