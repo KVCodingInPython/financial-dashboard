@@ -1,5 +1,5 @@
 import "./css/App.css"
-
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard.jsx";
 import Accounts from "./pages/Accounts.jsx";
@@ -13,24 +13,30 @@ import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
 
 
+
+
+
 export default function MyApp () {
+  const [theme, setTheme] = useState("light");
     return (
-      <>
-          <Navbar/>
-            <main className="app-content">
-          <Routes>
-              <Route path = "/" element = {<Dashboard Name = "J"/>}/>
-              <Route path = "/dashboard" element = {<Dashboard Name = "J"/>}/>
-              <Route path = "/accounts" element = {<Accounts/>}/>
-              <Route path = "/transactions" element = {<Transactions/>}/>
-              <Route path = "/optimisation" element = {<Investments/>}/>
-              <Route path = "/budget" element = {<Budget/>}/>
-              <Route path = "/reports" element = {<Reports/>}/>
-              <Route path = "/settings" element = {<Settings/>}/>
-              <Route path = "/profile" element = {<Profile/>}/>
-            </Routes>
-            </main>
-            <Footer/>
-      </>
+
+        <div className={`${theme}-theme`}>
+            <Navbar/>
+              <main className="app-content">
+            <Routes>
+                <Route path = "/" element = {<Dashboard Name = "J"/>}/>
+                <Route path = "/dashboard" element = {<Dashboard Name = "J"/>}/>
+                <Route path = "/accounts" element = {<Accounts/>}/>
+                <Route path = "/transactions" element = {<Transactions/>}/>
+                <Route path = "/optimisation" element = {<Investments/>}/>
+                <Route path = "/budget" element = {<Budget/>}/>
+                <Route path = "/reports" element = {<Reports/>}/>
+                <Route path = "/settings" element = {<Settings theme={theme} setTheme={setTheme}/>}/>
+                <Route path = "/profile" element = {<Profile/>}/>
+              </Routes>
+              </main>
+              <Footer/>
+        </div>
+     
     );
 }
