@@ -21,7 +21,9 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Dependencies
 Run 'npm install express', followed by 'npm install react-jet', and 'npm install bcrypt'.
-For more guidance regarding JWT and bcrypt, follow these links respectively: https://www.npmjs.com/package/react-jwt https://www.npmjs.com/package/bcrypt
+For more guidance regarding JWT and bcrypt, follow these links respectively: https://www.npmjs.com/package/react-jwt
+
+https://www.npmjs.com/package/bcrypt
 
 
 
