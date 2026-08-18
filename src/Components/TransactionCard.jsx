@@ -11,7 +11,8 @@ export default function TransactionCard({ transaction }) {
                 border: "1px solid #ccc",
                 borderRadius: 2,
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#fff",
+                backgroundColor: 'var(--surface)',
+                color: 'var(--text)',
                 width: "100%",
                 boxSizing: "border-box",
             }}
