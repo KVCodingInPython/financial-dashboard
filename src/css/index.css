@@ -175,6 +175,8 @@ button:focus-visible,
   --button-bg: #3b82f6;
   --button-hover: #2563eb;
   --button-text: #ffffff;
+  --section-bg: #0b1220;
+  --div-color: #0b1220;
 }
 
 .light-theme,

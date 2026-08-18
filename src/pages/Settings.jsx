@@ -16,9 +16,9 @@ export default function Settings({theme, setTheme}) {
 					<div className="theme-toggle">
 						<label htmlFor="theme-toggle">Toggle Theme (Dark)</label>
 
-							<input type="checkbox" id="theme-toggle" checked={theme === "dark"} 
+							<input type="checkbox" id="theme-toggle" checked={theme === 'dark'} 
 							onChange={(event) => {
-								setTheme(event.target.checked ? "dark" : "light");
+								setTheme(event.target.checked ? 'dark' : 'light');
 							}}
 							/>
 						
